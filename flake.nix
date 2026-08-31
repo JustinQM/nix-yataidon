@@ -11,6 +11,21 @@
       url = "github:Yonokid/YataiDON";
       flake = false;
     };
+    pytaikogreen-src =
+    {
+      url = "git+https://ese.tjadataba.se/Yonokid/PyTaikoGreen.git";
+      flake = false;
+    };
+    yataidonred-src =
+    {
+      url = "git+https://ese.tjadataba.se/Yonokid/YataiDONRed.git";
+      flake = false;
+    };
+    yataidonhss-src =
+    {
+      url = "git+https://ese.tjadataba.se/Yonokid/YataiDON-HSS.git";
+      flake = false;
+    };
 
     raylib-src =
     {
@@ -86,6 +101,9 @@
             libsndfile   = inputs.libsndfile-src;
             rtaudio      = inputs.rtaudio-src;
             portaudio    = inputs.portaudio-src;
+            pytaikogreen = inputs.pytaikogreen-src;
+            yataidonred  = inputs.yataidonred-src;
+            yataidonhss  = inputs.yataidonhss-src;
           };
         };
       };

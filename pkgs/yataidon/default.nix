@@ -78,10 +78,25 @@ stdenv.mkDerivation
     zstd
   ];
 
+  # The skins are git submodules hosted on TJADB's gitea. codegen.cmake
+  # reads PyTaikoGreen's skin_config.json to generate a header, so they
+  # are a build-time requirement, not just runtime assets.
+  postUnpack = ''
+    chmod -R u+w "$sourceRoot"
+    rm -rf "$sourceRoot/Skins"
+    mkdir -p "$sourceRoot/Skins"
+    cp -r --no-preserve=mode ${srcs.pytaikogreen} "$sourceRoot/Skins/PyTaikoGreen"
+    cp -r --no-preserve=mode ${srcs.yataidonred}  "$sourceRoot/Skins/YataiDONRed"
+    cp -r --no-preserve=mode ${srcs.yataidonhss}  "$sourceRoot/Skins/YataiDON-HSS"
+  '';
+
   cmakeFlags =
   [
     "-DCMAKE_BUILD_TYPE=Release"
     "-DFETCHCONTENT_FULLY_DISCONNECTED=ON"
+    "-DCPPTRACE_USE_EXTERNAL_LIBDWARF=ON"
+    "-DCPPTRACE_FIND_LIBDWARF_WITH_PKGCONFIG=ON"
+    "-DCPPTRACE_USE_EXTERNAL_ZSTD=ON"
     "-DFETCHCONTENT_SOURCE_DIR_RAYLIB=${srcs.raylib}"
     "-DFETCHCONTENT_SOURCE_DIR_RAPIDJSON=${srcs.rapidjson}"
     "-DFETCHCONTENT_SOURCE_DIR_TOMLPLUSPLUS=${srcs.tomlplusplus}"
@@ -91,21 +106,20 @@ stdenv.mkDerivation
     "-DFETCHCONTENT_SOURCE_DIR_CPPTRACE=${srcs.cpptrace}"
     "-DFETCHCONTENT_SOURCE_DIR_LIBSNDFILE=${srcs.libsndfile}"
     "-DFETCHCONTENT_SOURCE_DIR_RTAUDIO=${srcs.rtaudio}"
-    "-DFETCHCONTENT_SOURCE_DIR_PORTAUDIO=${srcs.portaudio}"
-    "-DCPPTRACE_USE_EXTERNAL_LIBDWARF=ON"
-    "-DCPPTRACE_FIND_LIBDWARF_WITH_PKGCONFIG=ON"
-    "-DCPPTRACE_USE_EXTERNAL_ZSTD=ON"
   ];
 
   installPhase = ''
     runHook preInstall
 
     mkdir -p $out/share/yataidon $out/bin
+
     cp bin/YataiDON $out/share/yataidon/
-    cp -r $src/shader $out/share/yataidon/
-    cp $src/config.toml $out/share/yataidon/
-    if [ -d $src/Songs ]; then
-      cp -r $src/Songs $out/share/yataidon/
+    cp -r ../shader $out/share/yataidon/
+    cp -r ../Skins $out/share/yataidon/
+    cp ../config.toml $out/share/yataidon/
+
+    if [ -d ../Songs ]; then
+      cp -r ../Songs $out/share/yataidon/
     else
       mkdir -p $out/share/yataidon/Songs
     fi
