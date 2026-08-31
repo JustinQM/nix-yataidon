@@ -5,6 +5,8 @@
 , pkg-config
 , python3
 , makeWrapper
+, copyDesktopItems
+, makeDesktopItem
 , srcs
 , sdl3
 , libGL
@@ -47,6 +49,7 @@ stdenv.mkDerivation
     pkg-config
     python3
     makeWrapper
+    copyDesktopItems
   ];
 
   buildInputs =
@@ -108,6 +111,21 @@ stdenv.mkDerivation
     "-DFETCHCONTENT_SOURCE_DIR_RTAUDIO=${srcs.rtaudio}"
   ];
 
+  desktopItems =
+  [
+    (makeDesktopItem
+    {
+      name = "yataidon";
+      exec = "yataidon";
+      icon = "yataidon";
+      desktopName = "YataiDON";
+      genericName = "Rhythm Game";
+      comment = "Taiko no Tatsujin simulator";
+      categories = [ "Game" "ArcadeGame" ];
+      keywords = [ "taiko" "rhythm" "tja" "drum" ];
+    })
+  ];
+
   installPhase = ''
     runHook preInstall
 
@@ -122,6 +140,11 @@ stdenv.mkDerivation
       cp -r ../Songs $out/share/yataidon/
     else
       mkdir -p $out/share/yataidon/Songs
+    fi
+
+    if [ -f ../docs/logo.png ]; then
+      install -Dm644 ../docs/logo.png \
+        $out/share/icons/hicolor/512x512/apps/yataidon.png
     fi
 
     substitute ${./launcher.sh} $out/bin/yataidon --subst-var out
