@@ -1,0 +1,272 @@
+{
+  "nodes": {
+    "cpptrace-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773258953,
+        "narHash": "sha256-x2WLlI678JCtrEtBgA0akZn6pV+3u+/fmcSyslEwRmY=",
+        "owner": "jeremy-rifkin",
+        "repo": "cpptrace",
+        "rev": "91b6b78e408a8b1c0b7146c9034a03156c082da2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "jeremy-rifkin",
+        "repo": "cpptrace",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": "nixpkgs-lib"
+      },
+      "locked": {
+        "lastModified": 1787559586,
+        "narHash": "sha256-onL0VLf9vPllmT0H/OlURIU5r5t5WIEl7t4tVNKT0Nw=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "9d0d87172c374f89da73c1cfe6d81ae62feac1f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "libsndfile-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1785570325,
+        "narHash": "sha256-q0rpwSP3pt46n8ybdVdDxGi4A3CApdJHGt5sWSaXWFs=",
+        "owner": "libsndfile",
+        "repo": "libsndfile",
+        "rev": "7ff854d1e0bd9a751a9ff52ed980c62afced91fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libsndfile",
+        "repo": "libsndfile",
+        "type": "github"
+      }
+    },
+    "lua-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1754007272,
+        "narHash": "sha256-m0x31GzKhkuzohvMDme5rA0nDQ5qaZotrDje5Uqylsk=",
+        "owner": "marovira",
+        "repo": "lua",
+        "rev": "4737fb98d04a3e2fd365e55d8cb95e4c961db3a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "marovira",
+        "ref": "5.4.8",
+        "repo": "lua",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1788039129,
+        "narHash": "sha256-pa4Q0qErvCvzCaaUph7Sm37RhR4xvPrYI8Lgz6k85+A=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-lib": {
+      "locked": {
+        "lastModified": 1785031560,
+        "narHash": "sha256-OmshNvn2vupOFpYinLUu+1Dnpu4n7Q5N3ggGVNHpkUI=",
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "rev": "0e79af5e3d4dcfcd676ab5ba3f95d2e3352e078c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nixpkgs.lib",
+        "type": "github"
+      }
+    },
+    "portaudio-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1777592646,
+        "narHash": "sha256-vfx6loOJsI0UW51XORELlUcfdfSj0Jj+0h2OUVaqwhU=",
+        "owner": "PortAudio",
+        "repo": "portaudio",
+        "rev": "b0fe9de7ec86ebe5a26086f1d662ab74d7ebfae4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "PortAudio",
+        "repo": "portaudio",
+        "rev": "b0fe9de7ec86ebe5a26086f1d662ab74d7ebfae4",
+        "type": "github"
+      }
+    },
+    "rapidjson-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1738762088,
+        "narHash": "sha256-oHHLYRDMb7Y/k0CwsdsxPC5lglr2IChQi0AiOMiFn78=",
+        "owner": "Tencent",
+        "repo": "rapidjson",
+        "rev": "24b5e7a8b27f42fa16b96fc70aade9106cf7102f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Tencent",
+        "repo": "rapidjson",
+        "type": "github"
+      }
+    },
+    "raylib-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787999961,
+        "narHash": "sha256-Ap0qpmOiYj+X2j1X9xFmjFy0gnamBms8XsiKrJlRp0A=",
+        "owner": "raysan5",
+        "repo": "raylib",
+        "rev": "9f3cadf1e618f125bd9b282c7759f8cb26ce17fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "raysan5",
+        "repo": "raylib",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "cpptrace-src": "cpptrace-src",
+        "flake-parts": "flake-parts",
+        "libsndfile-src": "libsndfile-src",
+        "lua-src": "lua-src",
+        "nixpkgs": "nixpkgs",
+        "portaudio-src": "portaudio-src",
+        "rapidjson-src": "rapidjson-src",
+        "raylib-src": "raylib-src",
+        "rtaudio-src": "rtaudio-src",
+        "sdl3-src": "sdl3-src",
+        "sol2-src": "sol2-src",
+        "spdlog-src": "spdlog-src",
+        "tomlplusplus-src": "tomlplusplus-src",
+        "yataidon": "yataidon"
+      }
+    },
+    "rtaudio-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1690893527,
+        "narHash": "sha256-Acsxbnl+V+Y4mKC1gD11n0m03E96HMK+oEY/YV7rlIY=",
+        "owner": "thestk",
+        "repo": "rtaudio",
+        "rev": "b4f04903312e0e0efffbe77655172e0f060dc085",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thestk",
+        "ref": "6.0.1",
+        "repo": "rtaudio",
+        "type": "github"
+      }
+    },
+    "sdl3-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1775257859,
+        "narHash": "sha256-vCz+jZ1Sl6Of60HXljciTjR3U4da0PldyFsG79qmQ7g=",
+        "owner": "libsdl-org",
+        "repo": "SDL",
+        "rev": "5848e584a1b606de26e3dbd1c7e4ecbc34f807a6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libsdl-org",
+        "ref": "release-3.4.4",
+        "repo": "SDL",
+        "type": "github"
+      }
+    },
+    "sol2-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740509112,
+        "narHash": "sha256-bW6HD9WLOWizli6LnrkFZKxiT8IdN0QESlok+xCFz1w=",
+        "owner": "ThePhD",
+        "repo": "sol2",
+        "rev": "9190880c593dfb018ccf5cc9729ab87739709862",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThePhD",
+        "ref": "v3.5.0",
+        "repo": "sol2",
+        "type": "github"
+      }
+    },
+    "spdlog-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1738408134,
+        "narHash": "sha256-4QZVCounDbtkP+58fejHGWjquWT3b03b9TNGs45dN7c=",
+        "owner": "gabime",
+        "repo": "spdlog",
+        "rev": "f355b3d58f7067eee1706ff3c801c2361011f3d5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gabime",
+        "ref": "v1.15.1",
+        "repo": "spdlog",
+        "type": "github"
+      }
+    },
+    "tomlplusplus-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1697204382,
+        "narHash": "sha256-h5tbO0Rv2tZezY58yUbyRVpsfRjY3i+5TPkkxr6La8M=",
+        "owner": "marzer",
+        "repo": "tomlplusplus",
+        "rev": "30172438cee64926dc41fdd9c11fb3ba5b2ba9de",
+        "type": "github"
+      },
+      "original": {
+        "owner": "marzer",
+        "ref": "v3.4.0",
+        "repo": "tomlplusplus",
+        "type": "github"
+      }
+    },
+    "yataidon": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788202061,
+        "narHash": "sha256-F/xrgygZe+NQV9VkF+ThI7Op2AmRj0oCq4Id/5L3YAA=",
+        "owner": "Yonokid",
+        "repo": "YataiDON",
+        "rev": "f157439f8df44f3ba71ca5f81fe00ef830cb3af4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Yonokid",
+        "repo": "YataiDON",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
