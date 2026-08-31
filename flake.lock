@@ -115,6 +115,22 @@
         "type": "github"
       }
     },
+    "pytaikogreen-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788186474,
+        "narHash": "sha256-5mNyEAw+N6G7QrsMEmHChjn0ChI1HUO0L2dkXR9KSZQ=",
+        "ref": "refs/heads/main",
+        "rev": "d493533f58aff599fc940b923085533a94f93043",
+        "revCount": 117,
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/PyTaikoGreen.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/PyTaikoGreen.git"
+      }
+    },
     "rapidjson-src": {
       "flake": false,
       "locked": {
@@ -155,13 +171,16 @@
         "lua-src": "lua-src",
         "nixpkgs": "nixpkgs",
         "portaudio-src": "portaudio-src",
+        "pytaikogreen-src": "pytaikogreen-src",
         "rapidjson-src": "rapidjson-src",
         "raylib-src": "raylib-src",
         "rtaudio-src": "rtaudio-src",
         "sol2-src": "sol2-src",
         "spdlog-src": "spdlog-src",
         "tomlplusplus-src": "tomlplusplus-src",
-        "yataidon-src": "yataidon-src"
+        "yataidon-src": "yataidon-src",
+        "yataidonhss-src": "yataidonhss-src",
+        "yataidonred-src": "yataidonred-src"
       }
     },
     "rtaudio-src": {
@@ -246,6 +265,38 @@
         "owner": "Yonokid",
         "repo": "YataiDON",
         "type": "github"
+      }
+    },
+    "yataidonhss-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786574015,
+        "narHash": "sha256-izmlfwCuc0RZx805NTyqZLvyNO/kGVVgmUUlLCKT/uU=",
+        "ref": "refs/heads/main",
+        "rev": "962ab53650526d13ef7d987a069ef842c4e5bbf6",
+        "revCount": 2,
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDON-HSS.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDON-HSS.git"
+      }
+    },
+    "yataidonred-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1788196826,
+        "narHash": "sha256-ZM7YwFMjJN5nuV1NHmMZcBLGe37l4ZV7seN2GU2/5SY=",
+        "ref": "refs/heads/main",
+        "rev": "0db31d841324e714aa3bae8e2cb94ca0bafc21f6",
+        "revCount": 2,
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDONRed.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDONRed.git"
       }
     }
   },

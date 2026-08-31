@@ -124,7 +124,8 @@ stdenv.mkDerivation
       mkdir -p $out/share/yataidon/Songs
     fi
 
-    makeWrapper $out/share/yataidon/YataiDON $out/bin/yataidon
+    substitute ${./launcher.sh} $out/bin/yataidon --subst-var out
+    chmod +x $out/bin/yataidon
 
     runHook postInstall
   '';
