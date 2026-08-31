@@ -3,8 +3,10 @@
 , cmake
 , ninja
 , pkg-config
+, python3
 , makeWrapper
 , srcs
+, sdl3
 , libGL
 , libX11
 , libXrandr
@@ -27,6 +29,8 @@
 , libsamplerate
 , sqlite
 , elfutils
+, libdwarf
+, zstd
 }:
 
 stdenv.mkDerivation
@@ -41,11 +45,13 @@ stdenv.mkDerivation
     cmake
     ninja
     pkg-config
+    python3
     makeWrapper
   ];
 
   buildInputs =
   [
+    sdl3
     libGL
     libX11
     libXrandr
@@ -68,14 +74,14 @@ stdenv.mkDerivation
     libsamplerate
     sqlite
     elfutils
+    libdwarf
+    zstd
   ];
 
   cmakeFlags =
   [
-    "-GNinja"
     "-DCMAKE_BUILD_TYPE=Release"
     "-DFETCHCONTENT_FULLY_DISCONNECTED=ON"
-    "-DFETCHCONTENT_SOURCE_DIR_SDL3=${srcs.sdl3}"
     "-DFETCHCONTENT_SOURCE_DIR_RAYLIB=${srcs.raylib}"
     "-DFETCHCONTENT_SOURCE_DIR_RAPIDJSON=${srcs.rapidjson}"
     "-DFETCHCONTENT_SOURCE_DIR_TOMLPLUSPLUS=${srcs.tomlplusplus}"
@@ -86,6 +92,9 @@ stdenv.mkDerivation
     "-DFETCHCONTENT_SOURCE_DIR_LIBSNDFILE=${srcs.libsndfile}"
     "-DFETCHCONTENT_SOURCE_DIR_RTAUDIO=${srcs.rtaudio}"
     "-DFETCHCONTENT_SOURCE_DIR_PORTAUDIO=${srcs.portaudio}"
+    "-DCPPTRACE_USE_EXTERNAL_LIBDWARF=ON"
+    "-DCPPTRACE_FIND_LIBDWARF_WITH_PKGCONFIG=ON"
+    "-DCPPTRACE_USE_EXTERNAL_ZSTD=ON"
   ];
 
   installPhase = ''
@@ -94,11 +103,14 @@ stdenv.mkDerivation
     mkdir -p $out/share/yataidon $out/bin
     cp bin/YataiDON $out/share/yataidon/
     cp -r $src/shader $out/share/yataidon/
-    cp -r $src/Songs $out/share/yataidon/ 2>/dev/null || mkdir -p $out/share/yataidon/Songs
     cp $src/config.toml $out/share/yataidon/
+    if [ -d $src/Songs ]; then
+      cp -r $src/Songs $out/share/yataidon/
+    else
+      mkdir -p $out/share/yataidon/Songs
+    fi
 
-    makeWrapper $out/share/yataidon/YataiDON $out/bin/yataidon \
-      --run 'cd "''${YATAIDON_HOME:-''${XDG_DATA_HOME:-$HOME/.local/share}/yataidon}"'
+    makeWrapper $out/share/yataidon/YataiDON $out/bin/yataidon
 
     runHook postInstall
   '';

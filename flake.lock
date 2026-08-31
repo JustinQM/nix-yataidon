@@ -158,11 +158,10 @@
         "rapidjson-src": "rapidjson-src",
         "raylib-src": "raylib-src",
         "rtaudio-src": "rtaudio-src",
-        "sdl3-src": "sdl3-src",
         "sol2-src": "sol2-src",
         "spdlog-src": "spdlog-src",
         "tomlplusplus-src": "tomlplusplus-src",
-        "yataidon": "yataidon"
+        "yataidon-src": "yataidon-src"
       }
     },
     "rtaudio-src": {
@@ -179,23 +178,6 @@
         "owner": "thestk",
         "ref": "6.0.1",
         "repo": "rtaudio",
-        "type": "github"
-      }
-    },
-    "sdl3-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1775257859,
-        "narHash": "sha256-vCz+jZ1Sl6Of60HXljciTjR3U4da0PldyFsG79qmQ7g=",
-        "owner": "libsdl-org",
-        "repo": "SDL",
-        "rev": "5848e584a1b606de26e3dbd1c7e4ecbc34f807a6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "libsdl-org",
-        "ref": "release-3.4.4",
-        "repo": "SDL",
         "type": "github"
       }
     },
@@ -250,7 +232,7 @@
         "type": "github"
       }
     },
-    "yataidon": {
+    "yataidon-src": {
       "flake": false,
       "locked": {
         "lastModified": 1788202061,

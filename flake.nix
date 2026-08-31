@@ -12,11 +12,6 @@
       flake = false;
     };
 
-    sdl3-src =
-    {
-      url = "github:libsdl-org/SDL/release-3.4.4";
-      flake = false;
-    };
     raylib-src =
     {
       url = "github:raysan5/raylib";
@@ -81,7 +76,6 @@
           srcs =
           {
             yataidon     = inputs.yataidon-src;
-            sdl3         = inputs.sdl3-src;
             raylib       = inputs.raylib-src;
             rapidjson    = inputs.rapidjson-src;
             tomlplusplus = inputs.tomlplusplus-src;
