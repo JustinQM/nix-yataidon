@@ -16,6 +16,23 @@
         "type": "github"
       }
     },
+    "cpr-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1740308114,
+        "narHash": "sha256-nKX9AYVC4e3B+vOzXWZu8S4I5BNpKnqkFJ2e8bVAUE4=",
+        "owner": "libcpr",
+        "repo": "cpr",
+        "rev": "dd967cb48ea6bcbad9f1da5ada0db8ac0d532c06",
+        "type": "github"
+      },
+      "original": {
+        "owner": "libcpr",
+        "ref": "1.11.2",
+        "repo": "cpr",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -31,6 +48,22 @@
       "original": {
         "owner": "hercules-ci",
         "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "libg719-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673787678,
+        "narHash": "sha256-0OzRabIFdbdTyfcrBlsW6PYiR1v2dBSL7olgumOEAwo=",
+        "owner": "kode54",
+        "repo": "libg719_decode",
+        "rev": "da90ad8a676876c6c47889bcea6a753f9bbf7a73",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kode54",
+        "repo": "libg719_decode",
         "type": "github"
       }
     },
@@ -115,22 +148,6 @@
         "type": "github"
       }
     },
-    "pytaikogreen-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1788186474,
-        "narHash": "sha256-5mNyEAw+N6G7QrsMEmHChjn0ChI1HUO0L2dkXR9KSZQ=",
-        "ref": "refs/heads/main",
-        "rev": "d493533f58aff599fc940b923085533a94f93043",
-        "revCount": 117,
-        "type": "git",
-        "url": "https://ese.tjadataba.se/Yonokid/PyTaikoGreen.git"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://ese.tjadataba.se/Yonokid/PyTaikoGreen.git"
-      }
-    },
     "rapidjson-src": {
       "flake": false,
       "locked": {
@@ -166,12 +183,13 @@
     "root": {
       "inputs": {
         "cpptrace-src": "cpptrace-src",
+        "cpr-src": "cpr-src",
         "flake-parts": "flake-parts",
+        "libg719-src": "libg719-src",
         "libsndfile-src": "libsndfile-src",
         "lua-src": "lua-src",
         "nixpkgs": "nixpkgs",
         "portaudio-src": "portaudio-src",
-        "pytaikogreen-src": "pytaikogreen-src",
         "rapidjson-src": "rapidjson-src",
         "raylib-src": "raylib-src",
         "rtaudio-src": "rtaudio-src",
@@ -179,7 +197,7 @@
         "spdlog-src": "spdlog-src",
         "tomlplusplus-src": "tomlplusplus-src",
         "yataidon-src": "yataidon-src",
-        "yataidonhss-src": "yataidonhss-src",
+        "yataidonnijiiro-src": "yataidonnijiiro-src",
         "yataidonred-src": "yataidonred-src"
       }
     },
@@ -254,47 +272,50 @@
     "yataidon-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1788202061,
-        "narHash": "sha256-F/xrgygZe+NQV9VkF+ThI7Op2AmRj0oCq4Id/5L3YAA=",
+        "lastModified": 1789150005,
+        "narHash": "sha256-aiB7oPifwxvUeKu28imie61LET4hjImUXF7crbQYhiw=",
         "owner": "Yonokid",
         "repo": "YataiDON",
-        "rev": "f157439f8df44f3ba71ca5f81fe00ef830cb3af4",
+        "rev": "ad8c6befe799bf083351d874ecb2b71128514a08",
         "type": "github"
       },
       "original": {
         "owner": "Yonokid",
+        "ref": "master",
         "repo": "YataiDON",
         "type": "github"
       }
     },
-    "yataidonhss-src": {
+    "yataidonnijiiro-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1786574015,
-        "narHash": "sha256-izmlfwCuc0RZx805NTyqZLvyNO/kGVVgmUUlLCKT/uU=",
-        "ref": "refs/heads/main",
-        "rev": "962ab53650526d13ef7d987a069ef842c4e5bbf6",
-        "revCount": 2,
+        "lastModified": 1789091666,
+        "narHash": "sha256-HW0E5EfltS/jFuIuonZNqi9EwSMO9XKlrahV85j4H5k=",
+        "ref": "main",
+        "rev": "c3f197352a2466a54ded13af9764552dde1fd8af",
+        "revCount": 102,
         "type": "git",
-        "url": "https://ese.tjadataba.se/Yonokid/YataiDON-HSS.git"
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDONNijiiro.git"
       },
       "original": {
+        "ref": "main",
         "type": "git",
-        "url": "https://ese.tjadataba.se/Yonokid/YataiDON-HSS.git"
+        "url": "https://ese.tjadataba.se/Yonokid/YataiDONNijiiro.git"
       }
     },
     "yataidonred-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1788196826,
-        "narHash": "sha256-ZM7YwFMjJN5nuV1NHmMZcBLGe37l4ZV7seN2GU2/5SY=",
-        "ref": "refs/heads/main",
-        "rev": "0db31d841324e714aa3bae8e2cb94ca0bafc21f6",
-        "revCount": 2,
+        "lastModified": 1789068008,
+        "narHash": "sha256-n74oNgvgYwgvjmIdepU+jN4CgD/TXG4C/r1x4ZplDUg=",
+        "ref": "main",
+        "rev": "b217813c05b9f54a34a5b63de8b8875a5532052b",
+        "revCount": 5,
         "type": "git",
         "url": "https://ese.tjadataba.se/Yonokid/YataiDONRed.git"
       },
       "original": {
+        "ref": "main",
         "type": "git",
         "url": "https://ese.tjadataba.se/Yonokid/YataiDONRed.git"
       }
