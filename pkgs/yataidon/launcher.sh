@@ -28,5 +28,10 @@ if [ ! -f "$GAMEDIR/config.toml" ]; then
   install -m 644 "$STORE/config.toml" "$GAMEDIR/config.toml"
 fi
 
+# prefer wayland video driver
+if [ -z "${SDL_VIDEODRIVER:-}" ] && [ -n "${WAYLAND_DISPLAY:-}" ]; then
+    export SDL_VIDEODRIVER=wayland
+fi
+
 cd "$GAMEDIR"
 exec ./YataiDON "$@"
