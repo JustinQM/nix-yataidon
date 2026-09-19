@@ -38,11 +38,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1787559586,
-        "narHash": "sha256-onL0VLf9vPllmT0H/OlURIU5r5t5WIEl7t4tVNKT0Nw=",
+        "lastModified": 1788450739,
+        "narHash": "sha256-glZLQlzIn1fXH6PazR2iUmTo7kzzyYSshrWhLS9TqCU=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "9d0d87172c374f89da73c1cfe6d81ae62feac1f1",
+        "rev": "31729ca8cbdb4fa927b34e5f4353e6a83f39e993",
         "type": "github"
       },
       "original": {
@@ -70,11 +70,11 @@
     "libsndfile-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1785570325,
-        "narHash": "sha256-q0rpwSP3pt46n8ybdVdDxGi4A3CApdJHGt5sWSaXWFs=",
+        "lastModified": 1788253691,
+        "narHash": "sha256-43GzokccLJyjDDyDpTz7Bu5v8Lzz7QInAj0ZpemLT64=",
         "owner": "libsndfile",
         "repo": "libsndfile",
-        "rev": "7ff854d1e0bd9a751a9ff52ed980c62afced91fe",
+        "rev": "b9103bd48b6c8fb517ae737fe3baee0c718b804c",
         "type": "github"
       },
       "original": {
@@ -102,11 +102,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1788039129,
-        "narHash": "sha256-pa4Q0qErvCvzCaaUph7Sm37RhR4xvPrYI8Lgz6k85+A=",
+        "lastModified": 1789785513,
+        "narHash": "sha256-B44WL6h0XoLjJ41bUPJk0X5SDinLCII//6EcBLXKiJ0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d2f67949798825fe853f7c5d0492b8bf016d3f88",
+        "rev": "20b1ddd1aa5ace70c9468305030aa4f9ef79671b",
         "type": "github"
       },
       "original": {
@@ -118,11 +118,11 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "lastModified": 1785031560,
-        "narHash": "sha256-OmshNvn2vupOFpYinLUu+1Dnpu4n7Q5N3ggGVNHpkUI=",
+        "lastModified": 1788057806,
+        "narHash": "sha256-DTQSMxzDWmT0zhguthvegnVkn7CFqGCv4IHCzk5ZUpM=",
         "owner": "nix-community",
         "repo": "nixpkgs.lib",
-        "rev": "0e79af5e3d4dcfcd676ab5ba3f95d2e3352e078c",
+        "rev": "596e2e3940e09b2abbeb03f75fa1828c57fcd72c",
         "type": "github"
       },
       "original": {
@@ -167,11 +167,11 @@
     "raylib-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1787999961,
-        "narHash": "sha256-Ap0qpmOiYj+X2j1X9xFmjFy0gnamBms8XsiKrJlRp0A=",
+        "lastModified": 1789853773,
+        "narHash": "sha256-JMNrGLvVHRh9nthpSq/8ITVkv4YGfoUfx3GPeCdsrbc=",
         "owner": "raysan5",
         "repo": "raylib",
-        "rev": "9f3cadf1e618f125bd9b282c7759f8cb26ce17fc",
+        "rev": "b927f1b2b120cac6446c4c8ca2fba6860cf99a5c",
         "type": "github"
       },
       "original": {
@@ -272,11 +272,11 @@
     "yataidon-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1789150005,
-        "narHash": "sha256-aiB7oPifwxvUeKu28imie61LET4hjImUXF7crbQYhiw=",
+        "lastModified": 1789852253,
+        "narHash": "sha256-XqGB/tgtotrY25vKKksBc/1U0szrOK+QJiCyavIvD6M=",
         "owner": "Yonokid",
         "repo": "YataiDON",
-        "rev": "ad8c6befe799bf083351d874ecb2b71128514a08",
+        "rev": "878a2a0dbbdb0414e637bf53a09b753b7d9c6155",
         "type": "github"
       },
       "original": {
@@ -289,11 +289,11 @@
     "yataidonnijiiro-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1789091666,
-        "narHash": "sha256-HW0E5EfltS/jFuIuonZNqi9EwSMO9XKlrahV85j4H5k=",
+        "lastModified": 1789839948,
+        "narHash": "sha256-XwZ0lheP1UtKQY3knetA3LSMNwIAlo0nPnUwfjR+LgQ=",
         "ref": "main",
-        "rev": "c3f197352a2466a54ded13af9764552dde1fd8af",
-        "revCount": 102,
+        "rev": "de9ea4d2b6f54e4ff1fa836bd6e085fec3409a62",
+        "revCount": 135,
         "type": "git",
         "url": "https://ese.tjadataba.se/Yonokid/YataiDONNijiiro.git"
       },
@@ -306,11 +306,11 @@
     "yataidonred-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1789068008,
-        "narHash": "sha256-n74oNgvgYwgvjmIdepU+jN4CgD/TXG4C/r1x4ZplDUg=",
+        "lastModified": 1789839936,
+        "narHash": "sha256-qEU+T13RMVls3TdbW6HgbIzOOqNecOJwtHRNyYn/Law=",
         "ref": "main",
-        "rev": "b217813c05b9f54a34a5b63de8b8875a5532052b",
-        "revCount": 5,
+        "rev": "5b914020f752763122c1a2a7bc8fc8bb89e7411a",
+        "revCount": 6,
         "type": "git",
         "url": "https://ese.tjadataba.se/Yonokid/YataiDONRed.git"
       },
