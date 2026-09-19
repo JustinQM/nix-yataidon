@@ -100,6 +100,23 @@
         "type": "github"
       }
     },
+    "miniz-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1666543245,
+        "narHash": "sha256-Jv9TJK2OsraEUREPgvCdnLXPdTSWesm6mvS3xa9XP7U=",
+        "owner": "richgel999",
+        "repo": "miniz",
+        "rev": "39f65158c7e5a830e390f3aece08de654c763981",
+        "type": "github"
+      },
+      "original": {
+        "owner": "richgel999",
+        "ref": "3.0.0",
+        "repo": "miniz",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1789785513,
@@ -188,6 +205,7 @@
         "libg719-src": "libg719-src",
         "libsndfile-src": "libsndfile-src",
         "lua-src": "lua-src",
+        "miniz-src": "miniz-src",
         "nixpkgs": "nixpkgs",
         "portaudio-src": "portaudio-src",
         "rapidjson-src": "rapidjson-src",

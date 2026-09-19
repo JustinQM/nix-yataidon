@@ -83,6 +83,11 @@
             url = "github:libcpr/cpr/1.11.2";
             flake = false;
         };
+        miniz-src =
+        {
+            url = "github:richgel999/miniz/3.0.0";
+            flake = false;
+        };
     };
 
     outputs = inputs@{ flake-parts, ... }:
@@ -125,6 +130,7 @@
                     portaudio    = inputs.portaudio-src;
                     libg719      = inputs.libg719-src;
                     cpr          = inputs.cpr-src;
+                    miniz        = inputs.miniz-src;
                 };
             };
         };

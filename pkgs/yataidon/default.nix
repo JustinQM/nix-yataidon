@@ -175,6 +175,8 @@ stdenv.mkDerivation
         "-DFETCHCONTENT_SOURCE_DIR_RTAUDIO=${srcs.rtaudio}"
         "-DFETCHCONTENT_SOURCE_DIR_LIBG719=${srcs.libg719}"
         "-DFETCHCONTENT_SOURCE_DIR_CPR=${srcs.cpr}"
+        "-DFETCHCONTENT_SOURCE_DIR_MINIZ=${srcs.miniz}"
+        "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
     ];
 
     desktopItems =
