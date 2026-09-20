@@ -290,11 +290,11 @@
     "yataidon-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1789852253,
+        "lastModified": 1789856863,
         "narHash": "sha256-XqGB/tgtotrY25vKKksBc/1U0szrOK+QJiCyavIvD6M=",
         "owner": "Yonokid",
         "repo": "YataiDON",
-        "rev": "878a2a0dbbdb0414e637bf53a09b753b7d9c6155",
+        "rev": "731fcfbabd8eace68ebfab2c22e89c89bf605535",
         "type": "github"
       },
       "original": {
@@ -307,11 +307,11 @@
     "yataidonnijiiro-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1789839948,
-        "narHash": "sha256-XwZ0lheP1UtKQY3knetA3LSMNwIAlo0nPnUwfjR+LgQ=",
+        "lastModified": 1789856850,
+        "narHash": "sha256-6+g3SRDxnXGC5wyPel5Qxy5CVYTKAAlsdct+AtaNvrk=",
         "ref": "main",
-        "rev": "de9ea4d2b6f54e4ff1fa836bd6e085fec3409a62",
-        "revCount": 135,
+        "rev": "ef2707460e39e1732f6bcbdc87c835366594ac52",
+        "revCount": 136,
         "type": "git",
         "url": "https://ese.tjadataba.se/Yonokid/YataiDONNijiiro.git"
       },
