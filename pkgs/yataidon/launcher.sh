@@ -24,7 +24,7 @@ done
 install -m 755 "$STORE/YataiDON" "$GAMEDIR/YataiDON"
 
 # Seed a writable config once; never clobber the user's.
-if [ ! -f "$GAMEDIR/config.toml" ]; then
+if [ -f "$STORE/config.toml" ] && [ ! -f "$GAMEDIR/config.toml" ]; then
   install -m 644 "$STORE/config.toml" "$GAMEDIR/config.toml"
 fi
 
