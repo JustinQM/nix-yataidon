@@ -5,6 +5,9 @@
 , autoPatchelfHook
 , copyDesktopItems
 , makeDesktopItem
+, makeWrapper
+, bubblewrap
+, glycin-loaders
 , alsa-lib
 , libjack2
 , libpulseaudio
@@ -52,6 +55,7 @@ stdenv.mkDerivation
         unzip
         autoPatchelfHook
         copyDesktopItems
+        makeWrapper
     ];
 
     buildInputs =
@@ -117,6 +121,12 @@ stdenv.mkDerivation
         chmod +x $out/bin/yataidon
 
         runHook postInstall
+    '';
+
+    postFixup = ''
+        wrapProgram $out/bin/yataidon \
+            --prefix PATH : ${lib.makeBinPath [ bubblewrap ]} \
+            --prefix XDG_DATA_DIRS : ${glycin-loaders}/share
     '';
 
     meta =
